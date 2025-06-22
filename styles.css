@@ -1,15 +1,5 @@
 @media (max-width: 576px) {
-  .form {
-    flex-direction: column;
-    align-items: stretch;
-    height: 50px;
-    width: 50px;
-  }
 
-  .form input {
-    margin-top: -30px;
-    width: 100%;
-  }
 
       .categoria-item {
         width: 100%;
@@ -27,6 +17,53 @@
       
       
     }
+
+    .form {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 400px;
+  gap: 0.5rem;
+}
+
+.form input {
+  border: none;
+  outline: none;
+  flex: 1;
+  background-color: transparent;
+  font-size: 1rem;
+}
+
+.form button {
+  border: none;
+  background: none;
+  color: #555;
+  font-size: 1.25rem;
+}
+
+@media (max-width: 576px) {
+  .form {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .logo-placeholder img {
+    max-height: 60px;
+  }
+
+  .form input {
+    margin: 0;
+    width: 100%;
+  }
+
+  .form i,
+  .form button {
+    font-size: 1rem;
+  }
+}
 
     /* TOPO */
     .topbar {
