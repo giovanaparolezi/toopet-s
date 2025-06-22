@@ -350,11 +350,11 @@
       }
 
       #prevCat {
-        left: 10px;
+        left: -10px;
       }
 
       #nextCat {
-        right: 10px;
+        right: -10px;
       }
 
       #prevCat:hover, #nextCat:hover {
