@@ -1,13 +1,16 @@
 @media (max-width: 576px) {
-      .form {
-        flex-direction: column;
-        align-items: stretch;
-      }
+  .form {
+    flex-direction: column;
+    align-items: stretch;
+    height: 50px;
+    width: 50px;
+  }
 
-      .form input {
-        margin-top: 0.5rem;
-        width: 100%;
-      }
+  .form input {
+    margin-top: -30px;
+    width: 100%;
+  }
+
 
       .categoria-item {
         width: 100%;
@@ -22,11 +25,13 @@
     body {
       background-color: #a1ecef;
       font-family: 'Jockey One', 'Montserrat';
+      
+      
     }
 
     /* TOPO */
     .topbar {
-      background-color: #01ccd3;
+      background-image: url('img/fundo.png');
     }
 
     .logo-placeholder img {
