@@ -69,6 +69,8 @@
     /* TOPO */
     .topbar {
       background-image: url('img/fundo.png');
+      max-width: 50%;
+
     }
 
     .logo-placeholder img {
