@@ -17,20 +17,7 @@
       
       
     }
-/* Mobile: diminuir mais ainda */
-@media (max-width: 576px) {
-  .logo-placeholder img {
-    max-height: 60px;
-    margin-top: 0;
-  }
 
-  @media (max-width: 576px) {
-  .topbar {
-    max-width: 100%;      /* ocupa a largura total no celular */
-    padding: 0.5rem;
-  }
-}
-}
     .form {
   display: flex;
   align-items: center;
@@ -80,19 +67,18 @@
 }
 
     /* TOPO */
-.topbar {
-  background-image: url('img/fundo.png');
-  max-width: 600px;       /* largura fixa menor */
-  width: 100%;
-  margin: 0 auto;         /* centraliza */
-  padding: 0.5rem 1rem;
-}
-/* Logo menor */
-.logo-placeholder img {
-  max-height: 80px;          /* Reduzido de 130px para 80px */
-  margin: 0;                 /* Removido espaçamento extra */
-}
+    .topbar {
+      background-image: url('img/fundo.png');
+      max-width: 50%;
 
+    }
+
+    .logo-placeholder img {
+     max-height: 130px;
+      
+      
+
+    }
 
     .form {
       display: flex;
