@@ -17,7 +17,17 @@
       
       
     }
+/* Mobile: diminuir mais ainda */
+@media (max-width: 576px) {
+  .logo-placeholder img {
+    max-height: 60px;
+    margin-top: 0;
+  }
 
+  .topbar {
+    padding: 0.25rem 0.5rem;  /* Menor ainda no mobile */
+  }
+}
     .form {
   display: flex;
   align-items: center;
@@ -67,18 +77,22 @@
 }
 
     /* TOPO */
-    .topbar {
-      background-image: url('img/fundo.png');
-      max-width: 50%;
+.topbar {
+  background-image: url('img/fundo.png');
+  max-width: 50%;
+  height: auto;              /* Adicionado */
+  padding: 0.5rem 1rem;      /* Reduzido */
+  display: flex;             /* Para alinhar os itens */
+  align-items: center;       /* Alinha verticalmente */
+  justify-content: space-between;
+}
 
-    }
+/* Logo menor */
+.logo-placeholder img {
+  max-height: 80px;          /* Reduzido de 130px para 80px */
+  margin: 0;                 /* Removido espaçamento extra */
+}
 
-    .logo-placeholder img {
-     max-height: 130px;
-      
-      
-
-    }
 
     .form {
       display: flex;
