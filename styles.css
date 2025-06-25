@@ -76,37 +76,38 @@
   background-image: url('img/fundo.png');
   background-size: cover;
   background-position: center;
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
 }
 
 /* RESPONSIVO */
 @media (max-width: 768px) {
   .topbar-sm {
-    padding-top: 1rem;
-    padding-bottom: 0.8rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    min-height: 100px; /* controla a área visível da imagem de fundo */
   }
 
-  /* Logo com tamanho proporcional */
+  /* AUMENTA a logo */
   .topbar-sm .logo-placeholder img {
-    max-height: 70px;
+    max-height: 80px;
     height: auto;
   }
 
-  /* Aumenta o espaço entre logo e a barra de busca */
+  /* Reduz espaçamento vertical */
   .topbar .row {
-    row-gap: 1rem !important;
+    row-gap: 0.3rem !important;
   }
 
-  /* Ajusta a posição da barra de busca */
+  /* Ajusta posição da barra de busca */
   .topbar-sm form.form {
-    margin-top: 0;
-    margin-bottom: 0.5rem;
+    margin-top: -4px;
+    margin-bottom: 0;
   }
 
-  /* Espaço entre barra de busca e ícones */
+  /* Espaço entre barra e ícones */
   .topbar-sm .d-flex.ms-md-3 {
-    margin-left: 1rem !important;
+    margin-left: 0.8rem !important;
   }
 }
     .form input {
