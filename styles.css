@@ -1,25 +1,20 @@
 @media (max-width: 576px) {
+  .categoria-item {
+    width: 100%;
+    max-width: 300px;
+  }
 
+  .titulo-categoria {
+    font-size: 2rem;
+  }
+}
 
-      .categoria-item {
-        width: 100%;
-        max-width: 300px;
-      }
+body {
+  background-color: #a1ecef;
+  font-family: 'Jockey One', 'Montserrat';
+}
 
-      .titulo-categoria {
-        font-size: 2rem;
-      }
-    }
-
-    body {
-      background-color: #a1ecef;
-      font-family: 'Jockey One', 'Montserrat';
-      
-      
-    }
-
-    .form {
-       
+.form {
   display: flex;
   align-items: center;
   background-color: #fff;
@@ -68,14 +63,10 @@
   }
 }
 
+.logo-placeholder img {
+  max-height: 130px;
+}
 
-
-    .logo-placeholder img {
-     max-height: 130px;
-      
-      
-
-    }
 /* TOPO padrão */
 .topbar-sm {
   background-image: url('img/fundo.png');
@@ -88,41 +79,47 @@
 /* RESPONSIVO (mobile) */
 @media (max-width: 768px) {
   .topbar-sm {
-    padding-top: 0.4rem;
-    padding-bottom: 0.4rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    min-height: 80px; /* reduz a área da imagem de fundo */
   }
 
-  /* Logo em tamanho agradável */
+  /* Logo maior no responsivo */
   .topbar-sm .logo-placeholder img {
-    max-height: 52px;
+    max-height: 70px;
     height: auto;
+    width: auto;
+    display: block;
+    margin: 0 auto;
   }
 
-  /* Sobe a barra de busca suavemente */
+  /* Sobe a barra de busca */
   .topbar-sm form.form {
-    margin-top: -4px;
-    margin-bottom: 0;
+    margin-top: -2px;
+    margin-bottom: 0.3rem;
   }
 
-  /* Reduz o espaçamento vertical entre colunas */
+  /* Espaçamento entre colunas */
   .topbar .row {
-    row-gap: 0.4rem !important;
+    row-gap: 0.3rem !important;
   }
 }
-    .form input {
-      border: none;
-      outline: none;
-      flex: 1;
-      background-color: transparent;
-      font-size: 1rem;
-    }
 
-    .form button {
-      border: none;
-      background: none;
-      color: #555;
-      font-size: 1.25rem;
-    }
+.form input {
+  border: none;
+  outline: none;
+  flex: 1;
+  background-color: transparent;
+  font-size: 1rem;
+}
+
+.form button {
+  border: none;
+  background: none;
+  color: #555;
+  font-size: 1.25rem;
+}
+
 
     /* MENU - Ajustes no dropdown Comemorativas */
     .menu-petz .nav-item {
