@@ -76,32 +76,29 @@ body {
   padding-bottom: 0.6rem;
 }
 
-/@media (max-width: 768px) {
+@media (max-width: 768px) {
   .topbar-sm {
     padding-top: 0.6rem;
     padding-bottom: 0.6rem;
   }
 
-  /* Logo maior e mais para baixo */
+  /* AUMENTA e DESCE a logo */
   .topbar-sm .logo-placeholder img {
-    max-height: 90px;
-    height: auto;
-    width: auto;
-    display: block;
-    margin: 10px auto 0 auto; /* <-- desce a logo com margem superior */
+    max-height: 100px; /* <-- aumenta a logo */
+    margin-top: 10px;   /* <-- desce a logo */
   }
 
-  /* Sobe a barra de busca suavemente */
+  /* MANTÉM a posição da barra de busca como estava */
   .topbar-sm form.form {
-    margin-top: 0.5rem;
-    margin-bottom: 0.3rem;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
-  /* Reduz o espaçamento vertical entre colunas */
   .topbar .row {
     row-gap: 0.4rem !important;
   }
 }
+
 
 .form input {
   border: none;
