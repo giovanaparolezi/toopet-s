@@ -44,13 +44,10 @@ body {
   .form {
     width: 100%;
     max-width: 100%;
-    margin-top: -0.5rem;
+    margin-top: -1.0rem;
   }
 
-  .logo-placeholder img {
-    max-height: 130px;
-    margin-top: 20px;
-  }
+
 
   .form input {
     margin: 0;
@@ -86,7 +83,7 @@ body {
 
   /* Logo maior no responsivo */
   .topbar-sm .logo-placeholder img {
-    max-height: 85px;
+    max-height: 95px;
     height: auto;
     width: auto;
     display: block;
