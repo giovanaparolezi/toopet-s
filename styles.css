@@ -70,44 +70,43 @@
 
 
 
-  
+    .logo-placeholder img {
+     max-height: 130px;
+      
+      
+
+    }
 /* TOPO padrão */
 .topbar-sm {
   background-image: url('img/fundo.png');
   background-size: cover;
   background-position: center;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
 }
 
-/* RESPONSIVO */
+/* RESPONSIVO (mobile) */
 @media (max-width: 768px) {
   .topbar-sm {
-    padding-top: 0.2rem;
-    padding-bottom: 0.2rem;
-    min-height: 100px; /* controla a área visível da imagem de fundo */
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
   }
 
-  /* AUMENTA a logo */
+  /* Logo em tamanho agradável */
   .topbar-sm .logo-placeholder img {
-    max-height: 80px;
+    max-height: 52px;
     height: auto;
   }
 
-  /* Reduz espaçamento vertical */
-  .topbar .row {
-    row-gap: 0.3rem !important;
-  }
-
-  /* Ajusta posição da barra de busca */
+  /* Sobe a barra de busca suavemente */
   .topbar-sm form.form {
     margin-top: -4px;
     margin-bottom: 0;
   }
 
-  /* Espaço entre barra e ícones */
-  .topbar-sm .d-flex.ms-md-3 {
-    margin-left: 0.8rem !important;
+  /* Reduz o espaçamento vertical entre colunas */
+  .topbar .row {
+    row-gap: 0.4rem !important;
   }
 }
     .form input {
