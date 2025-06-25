@@ -70,17 +70,25 @@
     .topbar {
       background-image: url('img/fundo.png');
     }
-.container{
-  height: 50%;
 
-    }
     .logo-placeholder img {
      max-height: 130px;
       
       
 
     }
+/* TOPO com altura reduzida */
+.topbar-sm {
+  padding-top: 0.5rem;  /* ou menos, se quiser mais fino */
+  padding-bottom: 0.5rem;
+}
 
+@media (max-width: 768px) {
+  .topbar-sm {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+  }
+}
     .form {
       display: flex;
       align-items: center;
