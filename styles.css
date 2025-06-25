@@ -70,7 +70,10 @@
     .topbar {
       background-image: url('img/fundo.png');
     }
+.container{
+  height: 50%;
 
+    }
     .logo-placeholder img {
      max-height: 130px;
       
