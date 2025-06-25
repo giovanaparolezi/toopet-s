@@ -81,12 +81,12 @@ body {
   .topbar-sm {
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
-    min-height: 80px; /* reduz a área da imagem de fundo */
+    min-height: 70px; /* reduz a área da imagem de fundo */
   }
 
   /* Logo maior no responsivo */
   .topbar-sm .logo-placeholder img {
-    max-height: 70px;
+    max-height: 85px;
     height: auto;
     width: auto;
     display: block;
