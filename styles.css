@@ -68,10 +68,7 @@
   }
 }
 
-    /* TOPO */
-    .topbar {
-      background-image: url('img/fundo.png');
-    }
+
 
     .logo-placeholder img {
      max-height: 130px;
@@ -84,34 +81,34 @@
   background-image: url('img/fundo.png');
   background-size: cover;
   background-position: center;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
 }
 
 /* RESPONSIVO (mobile) */
 @media (max-width: 768px) {
   .topbar-sm {
-    padding-top: 0.2rem;
-    padding-bottom: 0.2rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
   }
 
-  /* Reduz a altura da logo */
+  /* Logo em tamanho agradável */
   .topbar-sm .logo-placeholder img {
-    max-height: 36px;
+    max-height: 52px;
+    height: auto;
   }
 
-  /* Sobe a barra de busca */
+  /* Sobe a barra de busca suavemente */
   .topbar-sm form.form {
-    margin-top: -8px;
+    margin-top: -4px;
     margin-bottom: 0;
   }
 
-  /* Espaçamento entre logo e barra menor */
+  /* Reduz o espaçamento vertical entre colunas */
   .topbar .row {
-    row-gap: 0.2rem !important;
+    row-gap: 0.4rem !important;
   }
 }
-
     .form input {
       border: none;
       outline: none;
