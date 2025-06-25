@@ -76,7 +76,7 @@ body {
   .topbar-sm {
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
-    min-height: 70px; /* reduz a área da imagem de fundo */
+   
   }
 
   /* Logo maior no responsivo */
