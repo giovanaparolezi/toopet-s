@@ -1,20 +1,25 @@
 @media (max-width: 576px) {
-  .categoria-item {
-    width: 100%;
-    max-width: 300px;
-  }
 
-  .titulo-categoria {
-    font-size: 2rem;
-  }
-}
 
-body {
-  background-color: #a1ecef;
-  font-family: 'Jockey One', 'Montserrat';
-}
+      .categoria-item {
+        width: 100%;
+        max-width: 300px;
+      }
 
-.form {
+      .titulo-categoria {
+        font-size: 2rem;
+      }
+    }
+
+    body {
+      background-color: #a1ecef;
+      font-family: 'Jockey One', 'Montserrat';
+      
+      
+    }
+
+    .form {
+       
   display: flex;
   align-items: center;
   background-color: #fff;
@@ -63,10 +68,14 @@ body {
   }
 }
 
-.logo-placeholder img {
-  max-height: 130px;
-}
 
+
+    .logo-placeholder img {
+     max-height: 130px;
+      
+      
+
+    }
 /* TOPO padrão */
 .topbar-sm {
   background-image: url('img/fundo.png');
@@ -76,45 +85,44 @@ body {
   padding-bottom: 0.6rem;
 }
 
+/* RESPONSIVO (mobile) */
 @media (max-width: 768px) {
   .topbar-sm {
-    padding-top: 0.6rem;
-    padding-bottom: 0.6rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
   }
 
-  /* AUMENTA e DESCE a logo */
+  /* Logo em tamanho agradável */
   .topbar-sm .logo-placeholder img {
-    max-height: 100px; /* <-- aumenta a logo */
-    margin-top: 10px;   /* <-- desce a logo */
+    max-height: 52px;
+    height: auto;
   }
 
-  /* MANTÉM a posição da barra de busca como estava */
+  /* Sobe a barra de busca suavemente */
   .topbar-sm form.form {
-    margin-top: 0;
+    margin-top: -4px;
     margin-bottom: 0;
   }
 
+  /* Reduz o espaçamento vertical entre colunas */
   .topbar .row {
     row-gap: 0.4rem !important;
   }
 }
+    .form input {
+      border: none;
+      outline: none;
+      flex: 1;
+      background-color: transparent;
+      font-size: 1rem;
+    }
 
-
-.form input {
-  border: none;
-  outline: none;
-  flex: 1;
-  background-color: transparent;
-  font-size: 1rem;
-}
-
-.form button {
-  border: none;
-  background: none;
-  color: #555;
-  font-size: 1.25rem;
-}
-
+    .form button {
+      border: none;
+      background: none;
+      color: #555;
+      font-size: 1.25rem;
+    }
 
     /* MENU - Ajustes no dropdown Comemorativas */
     .menu-petz .nav-item {
