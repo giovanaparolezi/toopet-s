@@ -405,19 +405,7 @@ a {
     background-repeat: no-repeat;
   }
 
-  @media (max-width: 768px) {
-  .logo-placeholder {
-    display: flex;
-    justify-content: center;
-    margin-bottom: -0.5rem; /* aproxima a logo da barra */
-  }
-
-  .logo-placeholder img {
-    max-height: 90px;
-    height: auto;
-    width: auto;
-  }
-}
+  
 
   /* Barra de busca no responsivo */
   .topbar-sm .form {
@@ -445,6 +433,20 @@ a {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .logo-placeholder {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -0.5rem; /* aproxima a logo da barra */
+  }
+
+  .logo-placeholder img {
+    max-height: 90px;
+    height: auto;
+    width: auto;
+  }
 }
 
 /* Ajustes específicos para telas muito pequenas */
