@@ -394,24 +394,48 @@ a {
   z-index: 1;
 }
 
+/* RESPONSIVO (mobile) */
 @media (max-width: 768px) {
-  .topbar-sm .logo-placeholder {
-    margin-bottom: 0.3rem;
+  .topbar-sm {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-image: url('img/fundo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
-  .topbar-sm .logo-placeholder img {
-    max-height: 80px;
-    margin: 0 auto;
+  @media (max-width: 768px) {
+  .logo-placeholder {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -0.5rem; /* aproxima a logo da barra */
   }
 
+  .logo-placeholder img {
+    max-height: 90px;
+    height: auto;
+    width: auto;
+  }
+}
+
+  /* Barra de busca no responsivo */
   .topbar-sm .form {
-    margin: 0 auto;
-    padding: 0.4rem 0.8rem;
+    margin: 0.5rem auto;
+    display: flex !important;
+    max-width: 100%;
   }
 
-  .topbar-sm .row {
-    gap: 0.2rem;
-    flex-direction: column;
+  /* Ícones do carrinho e favoritos */
+  .topbar-sm .ms-3.d-flex {
+    display: flex !important;
+    justify-content: center;
+    margin: 0.5rem 0;
+  }
+
+  /* Espaçamento entre elementos */
+  .topbar .row {
+    row-gap: 0.5rem !important;
     align-items: center;
   }
 }
