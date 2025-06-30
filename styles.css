@@ -62,58 +62,7 @@ body {
   max-height: 130px;
 }
 
-/* TOPO padrão */
-.topbar-sm {
-  background-image: url('img/fundo.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding-top: 0.6rem;
-  padding-bottom: 0.6rem;
-  position: relative;
-  z-index: 1;
-}
 
-/* RESPONSIVO (mobile) */
-@media (max-width: 768px) {
-  .topbar-sm {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    background-image: url('img/fundo.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  /* Logo no responsivo */
-  .logo-placeholder img {
-    max-height: 90px;
-    height: auto;
-    width: auto;
-    margin: 0 auto;
-    display: block;
-  }
-
-  /* Barra de busca no responsivo */
-  .topbar-sm .form {
-    margin: 0.5rem auto;
-    display: flex !important;
-    max-width: 100%;
-  }
-
-  /* Ícones do carrinho e favoritos */
-  .topbar-sm .ms-3.d-flex {
-    display: flex !important;
-    justify-content: center;
-    margin: 0.5rem 0;
-  }
-
-  /* Espaçamento entre elementos */
-  .topbar .row {
-    row-gap: 0.5rem !important;
-    align-items: center;
-  }
-}
 
 /* MENU - Ajustes no dropdown Comemorativas */
 .menu-petz .nav-item {
@@ -433,6 +382,39 @@ a {
   color: black;
 }
 
+/* TOPO padrão */
+.topbar-sm {
+  background-image: url('img/fundo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .topbar-sm .logo-placeholder {
+    margin-bottom: 0.3rem;
+  }
+
+  .topbar-sm .logo-placeholder img {
+    max-height: 80px;
+    margin: 0 auto;
+  }
+
+  .topbar-sm .form {
+    margin: 0 auto;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .topbar-sm .row {
+    gap: 0.2rem;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 /* Garante que todos os elementos do topo fiquem alinhados */
 .topbar-sm .row {
   display: flex;
