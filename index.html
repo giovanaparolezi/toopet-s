@@ -5,247 +5,175 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Toopets</title>
 
-  <!-- Bootstrap e ícones -->
+  <!-- Bootstrap, ícones e fontes -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css">
- 
- 
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-
   <!-- TOPO -->
-<section class="topbar topbar-sm">
-  <div class="container">
-    <div class="row align-items-center gy-2 flex-column flex-md-row">
-      <div class="col-auto logo-placeholder text-center">
-        <img src="img/logo.png" alt="Logo Toopets" />
-      </div>
-      <div class="col col-md-5 d-flex align-items-center justify-content-center flex-wrap">
-        <form class="form w-100 mx-auto">
-          <i class="bi bi-search"></i>
-          <input type="search" placeholder="O que seu pet precisa?" />
-          <button type="reset"><i class="bi bi-x-lg"></i></button>
-        </form>
-        <div class="ms-3 d-flex">
+  <section class="topbar py-2 border-bottom bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-3 text-center text-md-start mb-2 mb-md-0">
+          <img src="img/logo.png" alt="Logo Toopets" class="img-fluid" />
+        </div>
+        <div class="col-12 col-md-6">
+          <form class="form d-flex align-items-center">
+            <i class="bi bi-search me-2"></i>
+            <input type="search" class="form-control" placeholder="O que seu pet precisa?" />
+            <button type="reset" class="btn"><i class="bi bi-x-lg"></i></button>
+          </form>
+        </div>
+        <div class="col-12 col-md-3 text-center text-md-end mt-2 mt-md-0">
           <a href="#" class="me-3 text-dark fs-5"><i class="bi bi-cart"></i></a>
           <a href="#" class="text-dark fs-5"><i class="bi bi-heart"></i></a>
         </div>
       </div>
     </div>
-  </div>
- 
-</section>
+  </section>
 
-    <nav class="navbar navbar-expand-lg bg-white border-bottom py-2">
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-white border-bottom">
     <div class="container">
-      <a class="navbar-brand d-lg-none fw-bold" href="#"></a>
-
-   
- <div class="mobile-actions d-md-none">
-  <a href="#" class="text-dark fs-5"><i class="bi bi-cart"></i></a>
-  <a href="#" class="text-dark fs-5"><i class="bi bi-heart"></i></a>
-     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuCollapse" aria-controls="menuCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand d-lg-none" href="#"><img src="img/logo.png" alt="Logo" height="40"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuCollapse">
         <span class="navbar-toggler-icon"></span>
       </button>
-</div>
-      <!-- Itens do menu -->
+
       <div class="collapse navbar-collapse justify-content-center" id="menuCollapse">
-        <ul class="navbar-nav menu-petz gap-lg-4 text-center">
+        <ul class="navbar-nav gap-lg-4 text-center">
           <li class="nav-item"><a href="adesivos.html" class="nav-link">Adesivos</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Laços</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Gravatas e Gargantilhas</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Bandanas e Colarinhos</a></li>
-          
-          <!-- Item Comemorativas com submenu personalizado -->
-          <li class="nav-item position-relative comemorativas-item">
-            <a class="nav-link" href="#">
+          <li class="nav-item dropdown position-relative">
+            <a class="nav-link dropdown-toggle" href="#" id="comemorativasDropdown" data-bs-toggle="dropdown">
               Comemorativas
             </a>
-            <div class="comemorativas-submenu">
-              <a href="#" class="submenu-item">Festa Junina</a>
-              <a href="#" class="submenu-item">Ano Novo</a>
-              <a href="#" class="submenu-item">Natal</a>
-              <a href="#" class="submenu-item">Páscoa</a>
-              <a href="#" class="submenu-item">Aniversário</a>
-            </div>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Festa Junina</a></li>
+              <li><a class="dropdown-item" href="#">Ano Novo</a></li>
+              <li><a class="dropdown-item" href="#">Natal</a></li>
+              <li><a class="dropdown-item" href="#">Páscoa</a></li>
+              <li><a class="dropdown-item" href="#">Aniversário</a></li>
+            </ul>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-<!-- TOPO RESPONSIVO -->
-<div class="topbar-sm d-md-none">
-  <div class="container">
-    <div class="row">
-      <!-- Logo -->
-      <div class="col-12 logo-placeholder text-center">
-        <img src="img/logo.png" alt="Logo">
-      </div>
-
-      <!-- Barra de busca -->
-      <div class="col-12">
-        <form class="form">
-          <input type="text" placeholder="Buscar...">
-          <button type="submit"><i class="bi bi-search"></i></button>
-        </form>
-      </div>
-
-      <!-- Ícones e Menu Mobile -->
-      <div class="mobile-actions d-flex d-md-none">
-        <!-- Botão do menu sanduíche -->
-        <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Ícone carrinho -->
-        <a href="#" class="text-dark fs-5"><i class="bi bi-cart"></i></a>
-        <!-- Ícone favoritos -->
-        <a href="#" class="text-dark fs-5"><i class="bi bi-heart"></i></a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- MENU COLLAPSÁVEL -->
-<nav class="navbar navbar-expand-md menu-petz">
-  <div class="container">
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Produtos</a></li>
-        <li class="nav-item comemorativas-item">
-          <a class="nav-link no-arrow dropdown-toggle">Comemorativas</a>
-          <div class="comemorativas-submenu">
-            <a class="submenu-item" href="#">Natal</a>
-            <a class="submenu-item" href="#">Páscoa</a>
-            <a class="submenu-item" href="#">Aniversário</a>
-          </div>
-        </li>
-        <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
 
   <!-- BANNER -->
   <div class="container my-4">
-    <div class="banner-image-container">
-      <img src="img/banner1.png" alt="Banner Toopets" />
-    </div>
+    <img src="img/banner1.png" class="img-fluid w-100" alt="Banner Toopets" />
   </div>
 
   <!-- CARDS -->
   <section class="py-5">
     <div class="container">
-      <div class="row justify-content-center g-4">
-        <div class="col-md-4">
-          <div class="card" data-aos="fade-up">
-            <div class="card-icon"><i class="bi bi-award"></i></div>
-            <div class="card-content">
-              <p class="card-title">Fabricação de laços e acessórios pet's</p>
-            </div>
+      <div class="row text-center g-4">
+        <div class="col-md-4" data-aos="fade-up">
+          <div class="card p-4">
+            <i class="bi bi-award fs-1 mb-3"></i>
+            <p class="card-title">Fabricação de laços e acessórios pet's</p>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card" data-aos="fade-up" data-aos-delay="150">
-            <div class="card-icon"><i class="bi bi-whatsapp"></i></div>
-            <div class="card-content">
-              <p class="card-title">Compre direto pelo Whatsapp</p>
-            </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+          <div class="card p-4">
+            <i class="bi bi-whatsapp fs-1 mb-3"></i>
+            <p class="card-title">Compre direto pelo Whatsapp</p>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card" data-aos="fade-up" data-aos-delay="300">
-            <div class="card-icon"><i class="bi bi-truck"></i></div>
-            <div class="card-content">
-              <p class="card-title">Enviamos para todo o Brasil!</p>
-            </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card p-4">
+            <i class="bi bi-truck fs-1 mb-3"></i>
+            <p class="card-title">Enviamos para todo o Brasil!</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CATEGORIAS COM CARROSSEL -->
-  <div class="container text-center position-relative categorias">
-    <h2 class="titulo-categoria" data-aos="fade-down">CATEGORIAS</h2>
-    <p class="subtitulo-categoria" data-aos="fade-down" data-aos-delay="150">Encontre o acessório ideal para o seu pet</p>
+  <!-- CATEGORIAS -->
+  <section class="py-5 text-center position-relative">
+    <div class="container">
+      <h2 class="mb-2" data-aos="fade-down">CATEGORIAS</h2>
+      <p class="mb-4" data-aos="fade-down" data-aos-delay="150">Encontre o acessório ideal para o seu pet</p>
 
-    <!-- Botões carrossel -->
-    <button class="position-absolute" id="prevCat">&#8249;</button>
-    <button class="position-absolute" id="nextCat">&#8250;</button>
-  
+      <!-- Botões carrossel -->
+      <button class="btn btn-light position-absolute start-0 top-50 translate-middle-y" id="prevCat">&#8249;</button>
+      <button class="btn btn-light position-absolute end-0 top-50 translate-middle-y" id="nextCat">&#8250;</button>
 
-    </button>
-    
-    <div class="categoria-grid" id="categoriaGrid" data-aos="fade-up" data-aos-delay="300">
-      <div class="categoria-item">
-        <div class="circulo" style="background-color: #CBAAF2;">
-          <img src="img/adesivo.png" alt="Adesivos" />
+      <div class="d-flex overflow-auto gap-3 py-3" id="categoriaGrid" data-aos="fade-up" data-aos-delay="300">
+        <div class="categoria-item text-center">
+          <div class="rounded-circle bg-primary-subtle p-3">
+            <img src="img/adesivo.png" alt="Adesivos" height="60" />
+          </div>
+          <a href="adesivos.html" class="d-block mt-2">Adesivos</a>
         </div>
-         <a href="adesivos.html"><p>Adesivos</p></a>
+        <div class="categoria-item text-center">
+          <div class="rounded-circle bg-danger-subtle p-3">
+            <img src="img/laços.png" alt="Laços" height="60" />
+          </div>
+          <p class="mt-2">Laços</p>
+        </div>
+        <div class="categoria-item text-center">
+          <div class="rounded-circle bg-warning-subtle p-3">
+            <img src="img/gravatas.png" alt="Gravatas" height="60" />
+          </div>
+          <p class="mt-2">Gravatas e Gargantilhas</p>
+        </div>
+        <div class="categoria-item text-center">
+          <div class="rounded-circle bg-success-subtle p-3">
+            <img src="img/colarinhos.png" alt="Colarinhos" height="60" />
+          </div>
+          <p class="mt-2">Bandanas e Colarinhos</p>
+        </div>
+        <div class="categoria-item text-center">
+          <div class="rounded-circle bg-info-subtle p-3">
+            <img src="img/comemorativas.png" alt="Comemorativas" height="60" />
+          </div>
+          <p class="mt-2">Comemorativas</p>
+        </div>
       </div>
-      <div class="categoria-item">
-        <div class="circulo" style="background-color: #F9C7E4;">
-          <img src="img/laços.png" alt="Laços" />
-        </div>
-        <p>Laços</p>
-      </div>
-      <div class="categoria-item">
-        <div class="circulo" style="background-color: #FFE07F;">
-          <img src="img/gravatas.png" alt="Gravatas" />
-        </div>
-        <p>Gravatas e Gargantilhas</p>
-      </div>
-      <div class="categoria-item">
-        <div class="circulo" style="background-color: #BDECB2;">
-          <img src="img/colarinhos.png" alt="Colarinhos" />
-        </div>
-        <p>Bandanas e Colarinhos</p>
-      </div>
-      <div class="categoria-item">
-        <div class="circulo" style="background-color: #7CE6F4;">
-          <img src="img/comemorativas.png" alt="Comemorativas" />
-        </div>
-        <p>Comemorativas</p>
+
+      <div class="mt-4" data-aos="fade-up" data-aos-delay="450">
+        <img src="img/banner2 (2).png" class="img-fluid" alt="Banner Categoria" />
       </div>
     </div>
-
-    <div class="banner2 mt-4" data-aos="fade-up" data-aos-delay="450">
-      <img src="img/banner2 (2).png" alt="Banner Categoria" />
-    </div>
-  </div>
+  </section>
 
   <!-- FOOTER -->
-  <footer class="footer pt-5 pb-3 mt-5">
+  <footer class="bg-dark text-white pt-5 pb-3">
     <div class="container">
       <div class="row justify-content-between">
         <div class="col-md-4 mb-4">
-          <h5 class="text-uppercase mb-3">Toopets</h5>
-          <p>Laços e acessórios feitos com carinho para deixar seu pet ainda mais estiloso. Entregamos para todo o Brasil!</p>
+          <h5>Toopets</h5>
+          <p>Laços e acessórios feitos com carinho para deixar seu pet ainda mais estiloso.</p>
         </div>
         <div class="col-md-3 mb-4">
-          <h6 class="text-uppercase mb-3">Links úteis</h6>
+          <h6>Links úteis</h6>
           <ul class="list-unstyled">
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Produtos</a></li>
-            <li><a href="#">Contato</a></li>
-            <li><a href="#">Política de envio</a></li>
+            <li><a href="#" class="text-white-50">Início</a></li>
+            <li><a href="#" class="text-white-50">Produtos</a></li>
+            <li><a href="#" class="text-white-50">Contato</a></li>
+            <li><a href="#" class="text-white-50">Política de envio</a></li>
           </ul>
         </div>
-<div class="col-md-4 mb-4">
-  <h6 class="text-uppercase mb-3">Contato</h6>
-  <p><i class="bi bi-envelope me-2"></i>@toopetslacos</p>
-  <p><i class="bi bi-whatsapp me-2"></i>(16)99231-3116</p>
-  <div class="mt-3">
-    <a href="#" class="me-3 fs-5"><i class="bi bi-instagram"></i></a>
-    <a href="#" class="me-3 fs-5"><i class="bi bi-facebook"></i></a>
-    <a href="#" class="fs-5"><i class="bi bi-tiktok"></i></a>
-  </div>
-</div>
+        <div class="col-md-4 mb-4">
+          <h6>Contato</h6>
+          <p><i class="bi bi-envelope me-2"></i>@toopetslacos</p>
+          <p><i class="bi bi-whatsapp me-2"></i>(16) 99231-3116</p>
+          <div class="mt-3">
+            <a href="#" class="text-white fs-5 me-3"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white fs-5 me-3"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white fs-5"><i class="bi bi-tiktok"></i></a>
+          </div>
+        </div>
       </div>
     </div>
   </footer>
@@ -256,26 +184,9 @@
   <script>
     AOS.init({ duration: 800, once: true });
 
-    // Carrossel categorias
     const categoriaGrid = document.getElementById('categoriaGrid');
-    const prevBtn = document.getElementById('prevCat');
-    const nextBtn = document.getElementById('nextCat');
-
-    prevBtn.addEventListener('click', () => {
-      categoriaGrid.scrollBy({
-        left: -200,
-      
-        behavior: 'smooth'
-      });
-    });
-
-    nextBtn.addEventListener('click', () => {
-      categoriaGrid.scrollBy({
-        left: 200,
-        behavior: 'smooth'
-      });
-    });
+    document.getElementById('prevCat').onclick = () => categoriaGrid.scrollBy({ left: -200, behavior: 'smooth' });
+    document.getElementById('nextCat').onclick = () => categoriaGrid.scrollBy({ left: 200, behavior: 'smooth' });
   </script>
 </body>
 </html>
-
