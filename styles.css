@@ -1,3 +1,5 @@
+
+
 @media (max-width: 576px) {
   .categoria-item {
     width: 100%;
@@ -486,4 +488,33 @@ a {
   .topbar-sm .ms-3.d-flex {
     display: none !important;
   }
+} 
+/* Remove borda e sombra do botão sanduíche */
+.navbar-toggler {
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0.25rem 0.5rem;
+}
+
+/* Estilização da barra mobile */
+.mobile-actions {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  border-top: 1px solid #ccc;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+/* Tamanho dos ícones mobile */
+.mobile-actions i {
+  font-size: 1.5rem;
+}
+
+/* Esconde ícones duplicados ao lado da barra de busca */
+.topbar-sm .ms-3.d-flex {
+  display: none !important;
 }
