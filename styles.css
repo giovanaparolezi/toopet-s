@@ -390,12 +390,24 @@ a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-top: 0.6rem;
-  padding-bottom: 0.6rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
   position: relative;
   z-index: 1;
 }
+@media (max-width: 768px) {
+  .topbar-sm {
+    padding: 0.3rem 0;
+  }
 
+  .topbar-sm .form {
+    padding: 0.3rem 0.8rem;
+  }
+
+  .logo-placeholder {
+    margin-bottom: 0;
+  }
+}
 /* RESPONSIVO (mobile) */
 @media (max-width: 768px) {
   .topbar-sm {
@@ -445,10 +457,15 @@ a {
   }
 
   .logo-placeholder img {
-    max-height: 90px;
+    max-height: 70px;
     height: auto;
     width: auto;
   }
+}
+
+.topbar-sm .form {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* Ajustes específicos para telas muito pequenas */
